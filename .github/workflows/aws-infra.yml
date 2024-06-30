@@ -37,3 +37,11 @@ jobs:
                 PULUMI_ACCESS_TOKEN: ${{secrets.PULUMI_ACCESS_TOKEN}}
               run:
                 pulumi login
+
+            - name: Pulumi stack select
+              run:
+                pulumi stack select asadlive84/project/dev2
+            
+            - name: Pulumi up
+              run:
+                pulumi up --yes
