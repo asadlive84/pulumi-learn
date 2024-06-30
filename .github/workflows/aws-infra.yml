@@ -35,3 +35,5 @@ jobs:
             - name: Pulumi login
               env:
                 PULUMI_ACCESS_TOKEN: ${{secrets.PULUMI_ACCESS_TOKEN}}
+              run:
+                pulumi login
