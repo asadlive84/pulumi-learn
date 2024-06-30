@@ -20,3 +20,6 @@ public_subnet = aws.ec2.Subnet("public-subnet-asad",
                                availability_zone="ap-southeast-1a"
                                )
 
+
+igw = aws.ec2.InternetGateway("igw", vpc_id=vpc.id)
+
